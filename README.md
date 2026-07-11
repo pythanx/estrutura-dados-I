@@ -47,14 +47,19 @@ gcc -o ex01 "Ponteiros e Alocacao Dinamica/ex_01-ponteiro-alocacao.c" -lm
  A flag -lm é necessária para linkar a biblioteca math.h (função pow()).
 
 ## Exercícios
-Ponteiros e Alocação Dinâmica
-Arquivo	Descrição
-ex_01-ponteiro-alocacao.c	Alocação dinâmica de um inteiro e uso de ponteiros
-ex_02-semaforo.c	Aritmética de ponteiros com estruturas de semáforo
-ex_05-vetor-dinamico.c	Vetores dinâmicos com potências de 2 e 3
-Pilhas e Filas
-Arquivo	Descrição
-ex1_pilha-livros.c	Pilha de livros com funções push, pop e exibição
+### Ponteiros e Alocação Dinâmica
+
+| Arquivo | Descrição |
+|---------|-----------|
+| `ex_01-ponteiro-alocacao.c` | Alocação dinâmica de um inteiro e uso de ponteiros |
+| `ex_02-semaforo.c` | Aritmética de ponteiros com estruturas de semáforo |
+| `ex_05-vetor-dinamico.c` | Vetores dinâmicos com potências de 2 e 3 |
+
+### Pilhas e Filas
+
+| Arquivo | Descrição |
+|---------|-----------|
+| `ex1_pilha-livros.c` | Pilha de livros com funções push, pop e exibição |
 
 
 ## Desenvolvido por
