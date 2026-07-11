@@ -1,17 +1,17 @@
 /**
-* @file ex2_semaforo.c
- * @brief Programa de teste para protótipo de hardware de semáforo utilizando aritmética de ponteiros.
+ * @file ex2_semaforo.c
+ * @brief Teste de protótipo de hardware de semáforo usando aritmética de ponteiros.
  *
  * Atividades realizadas:
- * a) Crie uma estrutura que tenha dois atributos: cor (cadeia de caracteres) e id (inteiro).
- * b) Crie três variáveis com o tipo definido no item a.
- * c) Crie um ponteiro do mesmo tipo.
- * d) Inicialize as estruturas da seguinte forma:
- *    - cor vermelha, id 1.
- *    - cor amarela, id 2.
- *    - cor verde, id 3.
- * e) Inicialize o ponteiro apontando para a primeira variável criada.
- * f) Por meio de operações aritméticas com ponteiros, percorra a memória e imprima o valor de cada uma das variáveis.
+ * a) Cria uma estrutura com dois atributos: cor (string) e id (inteiro).
+ * b) Cria três variáveis do tipo definido no item a.
+ * c) Cria um ponteiro do mesmo tipo.
+ * d) Inicializa as estruturas:
+ *    - cor vermelha, id 1
+ *    - cor amarela, id 2
+ *    - cor verde, id 3
+ * e) Faz o ponteiro apontar para a primeira variável.
+ * f) Usa aritmética de ponteiros para percorrer a memória e exibir os valores.
  *
  * @author Giselle Oliveira (GitHub: @pythanx)
  * @date 16/05/2026
@@ -23,39 +23,38 @@
 #include <string.h>
 #include <locale.h>
 
-// Cria e estrutura do semaforo
+ // Estrutura que representa um semáforo
 struct semaforo {
- char cor[30];
- int id;
+    char cor[30];
+    int id;
 };
 
-// Cria as 3 variaveis
+// Vetor com as 3 variáveis do tipo semáforo
 struct semaforo s[3];
 
-// Cria um ponteiro do mesmo tipo
-struct semaforo *ptr;
+// Ponteiro para o mesmo tipo
+struct semaforo* ptr;
 
 int main() {
- setlocale(LC_ALL, "Portugues");
+    setlocale(LC_ALL, "Portuguese");
 
- // Inicialize as estruturas: cor vermelha, id 1...
- strcpy(s[0].cor, "vermelha");
- s[0].id = 1;
- strcpy(s[1].cor, "amarela");
- s[1].id = 2;
- strcpy(s[2].cor, "verde");
- s[2].id = 3;
+    // Inicializa os semáforos
+    strcpy(s[0].cor, "vermelha");
+    s[0].id = 1;
+    strcpy(s[1].cor, "amarela");
+    s[1].id = 2;
+    strcpy(s[2].cor, "verde");
+    s[2].id = 3;
 
- // Inicialize o ptr apontando para a primeira variavel
- ptr = s; //ou ptr = &s[0];
+    // Faz o ponteiro apontar para o primeiro elemento
+    ptr = s; // ou ptr = &s[0];
 
- //Percorra a memória e imprima o valor das variavéis
- printf("\nSemaforo: \n");
- for (int i = 0; i < 3; i++) {
-  printf("\n * cor: %s, id: %d", ptr->cor, ptr->id);
-  ptr++;
- }
- return 0;
+    // Percorre a memória usando aritmética de ponteiros
+    printf("\nSemaforo: \n");
+    for (int i = 0; i < 3; i++) {
+        printf("\n * cor: %s, id: %d", ptr->cor, ptr->id);
+        ptr++; // Avança para o próximo elemento
+    }
+
+    return 0;
 }
-
-
