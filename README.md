@@ -4,7 +4,7 @@ Exercícios resolvidos da disciplina de Estrutura de Dados I.
 
 ## Estrutura do projeto
 ```
-Estrutura_de_Dados/
+estrutura-dados-I/
 ├── README.md
 ├── CMakeLists.txt
 ├── Ponteiros e Alocacao Dinamica/
@@ -62,5 +62,3 @@ Gis • Estudante de Análise e Desenvolvimento de Sistemas
 
 ## Objetivo
 Este repositório tem como objetivo registrar minha evolução na disciplina de Estrutura de Dados I, servindo como material de estudo e consulta.
-
-"A lógica é a arte de pensar bem." 🧠
